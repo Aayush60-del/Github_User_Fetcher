@@ -6,6 +6,12 @@ The project focuses on practicing React Hooks, API integration, asynchronous Jav
 
 ---
 
+![GitHub User Fetcher Preview](./src/assets/GitHub.png)
+
+---
+
+---
+
 ## ✨ Features
 
 - 🔍 Search GitHub users by username
@@ -20,12 +26,6 @@ The project focuses on practicing React Hooks, API integration, asynchronous Jav
 - 🚀 Open individual repositories
 - ⚡ Fetch real-time data from GitHub API
 - 📱 Responsive and modern UI
-
----
-
-## 📸 Preview
-
-![GitHub User Fetcher Preview](./src/assets/GitHub.png)
 
 ---
 
