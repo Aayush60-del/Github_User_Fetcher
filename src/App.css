@@ -1,0 +1,337 @@
+.app {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+/* =========================
+   Header
+========================= */
+
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.github-icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 18px;
+}
+
+.app-header h1 {
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+
+.app-header p {
+  color: #8b949e;
+  font-size: 16px;
+}
+
+/* =========================
+   Search Box
+========================= */
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  max-width: 650px;
+  margin: 0 auto 45px;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 15px 18px;
+
+  background: #161b22;
+  color: #f0f6fc;
+
+  border: 1px solid #30363d;
+  border-radius: 10px;
+
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.search-container input::placeholder {
+  color: #8b949e;
+}
+
+.search-container input:focus {
+  border-color: #58a6ff;
+  box-shadow: 0 0 0 3px rgba(56, 139, 253, 0.15);
+}
+
+.search-container button {
+  padding: 0 25px;
+
+  background: #238636;
+  color: white;
+
+  border: none;
+  border-radius: 10px;
+
+  font-weight: 600;
+
+  transition: 0.25s ease;
+}
+
+.search-container button:hover {
+  background: #2ea043;
+  transform: translateY(-2px);
+}
+
+.search-container button:active {
+  transform: translateY(0);
+}
+
+/* =========================
+   Profile Card
+========================= */
+
+.profile-card {
+  background: #161b22;
+
+  border: 1px solid #30363d;
+  border-radius: 16px;
+
+  padding: 30px;
+
+  margin-bottom: 40px;
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  margin-bottom: 25px;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+
+  border-radius: 50%;
+
+  border: 3px solid #30363d;
+}
+
+.profile-info h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.profile-info p {
+  color: #8b949e;
+  line-height: 1.6;
+}
+
+/* =========================
+   Profile Stats
+========================= */
+
+.profile-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+
+  margin: 25px 0;
+}
+
+.stat {
+  background: #0d1117;
+
+  border: 1px solid #30363d;
+  border-radius: 10px;
+
+  padding: 18px;
+  text-align: center;
+
+  transition: 0.25s ease;
+}
+
+.stat:hover {
+  border-color: #58a6ff;
+  transform: translateY(-3px);
+}
+
+.stat h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.stat p {
+  color: #8b949e;
+  font-size: 14px;
+}
+
+/* =========================
+   GitHub Profile Link
+========================= */
+
+.profile-link {
+  display: inline-block;
+
+  background: #21262d;
+
+  border: 1px solid #30363d;
+
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  color: #58a6ff;
+
+  transition: 0.25s ease;
+}
+
+.profile-link:hover {
+  background: #30363d;
+  border-color: #58a6ff;
+}
+
+/* =========================
+   Repository Section
+========================= */
+
+.repositories-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   Repository Grid
+========================= */
+
+.repository-container {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.repository-card {
+  background: #161b22;
+
+  border: 1px solid #30363d;
+
+  border-radius: 12px;
+
+  padding: 24px;
+
+  transition: 0.3s ease;
+}
+
+.repository-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #58a6ff;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.repository-card h3 {
+  color: #58a6ff;
+
+  font-size: 19px;
+
+  margin-bottom: 12px;
+
+  word-break: break-word;
+}
+
+.repository-card p {
+  color: #8b949e;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  min-height: 45px;
+
+  margin-bottom: 18px;
+}
+
+.repository-card a {
+  display: inline-block;
+
+  color: #f0f6fc;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  background: #21262d;
+
+  border: 1px solid #30363d;
+
+  padding: 8px 14px;
+
+  border-radius: 7px;
+
+  transition: 0.25s ease;
+}
+
+.repository-card a:hover {
+  background: #30363d;
+  color: #58a6ff;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 700px) {
+
+  .app {
+    padding: 40px 16px;
+  }
+
+  .app-header h1 {
+    font-size: 32px;
+  }
+
+  .search-container {
+    flex-direction: column;
+  }
+
+  .search-container button {
+    padding: 14px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .repository-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #30363d;
+  object-fit: cover;
+}
